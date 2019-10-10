@@ -16,7 +16,7 @@ import tensorflow as tf
 import tensorflow.contrib.slim as slim
 
 def load_mnist(dataset_name):
-    data_dir = os.path.join("./data", dataset_name)
+    data_dir = os.path.join("./MachineLearning06/data", dataset_name)
 
     def extract_data(filename, num_data, head_size, data_size):
         with gzip.open(filename) as bytestream:
